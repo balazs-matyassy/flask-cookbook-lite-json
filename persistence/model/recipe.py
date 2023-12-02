@@ -65,6 +65,9 @@ class Recipe:
 
     @staticmethod
     def create_from_data(data):
+        if data is None:
+            return None
+
         recipe = Recipe(recipe_id=data['id'])
         recipe.update(data)
 

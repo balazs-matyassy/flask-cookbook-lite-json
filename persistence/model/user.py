@@ -61,6 +61,9 @@ class User:
 
     @staticmethod
     def create_from_data(data):
+        if data is None:
+            return None
+
         user = User(user_id=data['id'])
         user.update(data)
 
