@@ -34,6 +34,8 @@ def __reset_admin_command():
 
 
 def __install():
+    os.makedirs(__folder, exist_ok=True)
+
     RecipeRepository.install()
     UserRepository.install()
 
