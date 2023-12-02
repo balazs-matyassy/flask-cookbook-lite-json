@@ -80,7 +80,7 @@ class UserRepository:
         with open(get_path('users.json'), 'w', encoding='utf-8') as file:
             rows = []
 
-            for user in users:
+            for user in sorted(users, key=lambda item: f'{item.role}\0{item.username}'):
                 row = user.to_data()
                 rows.append(row)
 

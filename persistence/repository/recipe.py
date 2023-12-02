@@ -77,7 +77,7 @@ class RecipeRepository:
         with open(get_path('recipes.json'), 'w', encoding='utf-8') as file:
             rows = []
 
-            for recipe in recipes:
+            for recipe in sorted(recipes, key=lambda item: f'{item.category}\0{item.name}'):
                 row = recipe.to_data()
                 rows.append(row)
 
