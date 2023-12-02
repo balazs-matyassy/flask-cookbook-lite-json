@@ -1,0 +1,1 @@
+[{"id": 1, "username": "admin", "password": "scrypt:32768:8:1$zLEOdLCpFs8AzpYd$6121febe4ee7a430a831885252eb0f138f5002744c00f52b31ecb74ad50c8372086a8a176a44d6877ef3402a6acfd177d4def0cfb777b18749160a09a4414a69", "role": "admin"}]
